@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transaction Table</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 align="center">Transaction Table</h1>
+    <form id="transactionForm">
+      <label for="Uname">Name:</label>
+      <input type="text" id="Uname" name="Uname"><br>
+      <label for="amount">Amount:</label>
+      <input type="text" id="amount" name="amount"><br>
+      <label for="payement">Payment:</label>
+      <input type="text" id="payement" name="payement"><br>
+      <button type="button" onclick="addTransaction()">Add Transaction</button>
+    </form>
+    <input type="text" id="search" onkeyup="searchTransactions(this.value)" placeholder="Search..">
+    <table id="transactionTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Amount</th>
+          <th>Payment</th>
+          <th>Date</th>
+          <th>ID</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
